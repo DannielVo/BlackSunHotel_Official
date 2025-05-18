@@ -1,0 +1,221 @@
+.dashboard-content-section {
+  padding: 20px;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.dashboard-content-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.dashboard-table-controls {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.dashboard-search-box {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.dashboard-search-box input {
+  padding: 5px 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.dashboard-users-left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* DATA TABLE */
+.dashboard-data-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+}
+
+.dashboard-data-table th,
+.dashboard-data-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.dashboard-data-table th {
+  background-color: #f8f9fa;
+  font-weight: 600;
+}
+
+.dashboard-data-table tr:hover {
+  background-color: #f5f5f5;
+}
+
+/* Action buttons */
+.dashboard-action-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+.dashboard-edit-btn,
+.dashboard-delete-btn {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 1.1rem;
+  padding: 5px;
+}
+
+.dashboard-edit-btn {
+  color: #3498db;
+}
+
+.dashboard-delete-btn {
+  color: #e74c3c;
+}
+
+/* Table footer */
+.dashboard-table-footer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.dashboard-pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.dashboard-pagination button.active {
+  background: var(--primary-color);
+  color: white;
+  border-color: var(--primary-color);
+}
+
+.dashboard-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Status badges */
+.dashboard-status {
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+}
+
+.dashboard-status.available {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.dashboard-status.booked {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+.dashboard-status.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.dashboard-rooms-left-part {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+
+/* ROOM SERVICE*/
+.dashboard-service-left-part {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.dashboard-status.completed {
+  background-color: #d1fae5;
+  color: #065f46;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.dashboard-status.pending {
+  background-color: #fef3c7;
+  color: #92400e;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+.dashboard-status.progress {
+  background-color: #dbeafe;
+  color: #1e40af;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+}
+
+/* BOOKINGS */
+.dashboard-bookings-header {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.dashboard-bookings-table th,
+.dashboard-bookings-table td {
+  padding: 12px 10px;
+}
+
+.dashboard-bookings-table td:nth-child(5),
+.dashboard-bookings-table td:nth-child(6) {
+  white-space: nowrap;
+}
+
+.dashboard-bookings-table td:nth-child(7) {
+  font-weight: 600;
+}
+
+.dashboard-status.paid {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.dashboard-status.cancelled {
+  background-color: #fee2e2;
+  color: #b91c1c;
+}
+
+/* ADD BTN */
+.dashboard-add-items-btn {
+  padding: 8px 15px;
+  background-color: var(--primary-color);
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: background-color 0.3s;
+}
+
+.dashboard-add-items-btn:hover {
+  background-color: var(--primary-dark);
+}

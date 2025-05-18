@@ -1,0 +1,10 @@
+.hero {
+  height: 100vh;
+  background-image: url("../../../assets/Home.webp");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 70px;
+}

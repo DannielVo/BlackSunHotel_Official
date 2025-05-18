@@ -1,0 +1,120 @@
+.bookingCancel-container {
+  padding: 80px;
+  background-color: #f9f9f9;
+  min-height: 100vh;
+}
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 20px;
+  color: var(--text-color);
+  text-align: center;
+  font-weight: normal;
+}
+
+.thankyou {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.bookCancel-section {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.bookCancel-category {
+  padding: 15px 0;
+  border-bottom: 1px solid #e0e0e0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.bookCancel-name {
+  font-size: 18px;
+}
+
+.bookCancel-items {
+  max-height: 0;
+  overflow: hidden;
+  padding: 0 0 0 20px;
+  margin-left: 30px;
+  list-style-type: none;
+  transition: max-height 0.5s ease, padding 0.5s ease;
+}
+
+.bookCancel-items > p {
+  text-align: center;
+  font-size: 16px;
+  color: var(--text-color);
+  line-height: 1.6;
+  max-width: 700px;
+  margin: 0 auto 30px auto;
+}
+
+.bookCancel-items li {
+  padding: 5px 0;
+  color: var(--text-color);
+  list-style-type: disc;
+  transition: all 0.5s ease;
+  opacity: 0;
+}
+
+.bookCancel-items.show {
+  max-height: 500px;
+  padding: 10px 0 10px 20px;
+}
+
+.bookCancel-items.show li {
+  opacity: 1;
+  transition: 0.5s;
+}
+
+.bookCancel-category:last-child {
+  border-bottom: none;
+}
+
+.bookCancel-sublist {
+  list-style-type: disc;
+  padding-left: 25px;
+  margin-top: 5px;
+}
+
+.bookCancel-sublist li {
+  padding: 3px 0;
+  font-size: 16px;
+  color: var(--text-color);
+}
+
+/* button */
+.arrow-btn {
+  font-size: 20px;
+  cursor: pointer;
+  transition: transform 0.5s ease;
+}
+
+.arrow-btn.up {
+  transform: rotate(180deg);
+}
+
+.close-btn {
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  font-size: 28px;
+  color: var(--text-color);
+  text-decoration: none;
+  z-index: 999;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.close-btn:hover {
+  transform: scale(1.2);
+}

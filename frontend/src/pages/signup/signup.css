@@ -1,0 +1,96 @@
+.signup-wrapper {
+  background-image: url("../../assets/NHA2-jpg.webp");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.signup-container {
+  width: 420px;
+  background: rgba(255, 255, 255, 0.4);
+  border: 2px solid var(--border-color);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 0 0 10px rgba(0, 0, 0, 0.01);
+  color: var(--text-color);
+  border-radius: 10px;
+  padding: 30px 40px;
+}
+
+.signup-container h1 {
+  font-size: 40px;
+  text-align: center;
+  font-weight: bold;
+}
+
+.input-box {
+  position: relative;
+  width: 100%;
+  height: 50px;
+  margin: 30px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  border-radius: 40px;
+  border: none;
+  outline: none;
+  border: 2px solid black;
+  font-size: 16px;
+  color: var(--text-color);
+  padding: 0 10px 0 45px;
+}
+
+.input-box input::placeholder {
+  color: var(--text-color);
+}
+
+.input-box i {
+  position: relative;
+  top: -35px;
+  left: 17px;
+  font-size: 20px;
+}
+
+.signup-container .btn {
+  width: 100%;
+  height: 45px;
+  background: var(--text-color);
+  border-radius: 40px;
+  margin-bottom: 10px;
+  border: none;
+  outline: none;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  font-size: 16px;
+  font-weight: 600;
+  color: #fff;
+  transition: 0.5s;
+}
+
+.signup-container .btn:hover {
+  transform: scale(0.9);
+}
+
+.login-link {
+  font-size: 14.5px;
+  text-align: center;
+  /* margin: 15px 0 15px; */
+  margin-top: 15px;
+}
+
+.login-link p a {
+  color: var(--text-color);
+  text-decoration: none;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.login-link a:hover {
+  text-decoration: underline;
+}

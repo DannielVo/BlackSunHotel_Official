@@ -1,0 +1,29 @@
+.room-section {
+  padding: 50px 0;
+  text-align: center;
+  background-color: #fff;
+}
+
+.rooms-container {
+  max-width: 1400px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.room-title {
+  text-align: center;
+  font-size: 32px;
+  margin-bottom: 50px;
+  color: var(--text-color);
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.room-cards {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 30px;
+  justify-content: center;
+  overflow-x: auto;
+  padding-bottom: 20px;
+}

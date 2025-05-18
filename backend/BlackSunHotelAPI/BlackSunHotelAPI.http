@@ -1,0 +1,6 @@
+@BlackSunHotelAPI_HostAddress = http://localhost:5039
+
+GET {{BlackSunHotelAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
