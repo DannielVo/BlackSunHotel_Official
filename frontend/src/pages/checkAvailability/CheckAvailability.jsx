@@ -89,12 +89,17 @@ const CheckAvailability = () => {
           checkOutDate: checkOut,
         }
       );
+      if (response.data.length === 0) {
+        alert("No available room");
+        return;
+      }
+      alert("List available room is updated");
 
       setCheckResponseData(response.data);
       handleCheckReponse(response.data);
     } catch (error) {
       console.error("Check failed:", error);
-      alert("Không tìm thấy phòng phù hợp.");
+      alert("No available room");
     }
   };
 

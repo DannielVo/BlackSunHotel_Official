@@ -59,6 +59,7 @@ const DashboardSettingModal = ({
                 !(
                   (title === "" && field.name === "id") ||
                   (title !== "" && field.name === "password") ||
+                  (title === "" && field.name === "userId") ||
                   field.name === "price"
                 ) && (
                   <div className="form-group grid-form" key={`field ${index}`}>
@@ -87,7 +88,7 @@ const DashboardSettingModal = ({
                         disabled={
                           field.readOnly ||
                           field.name === "id" ||
-                          activeTab === BOOKINGS_TAB_KEY
+                          (activeTab === BOOKINGS_TAB_KEY && title !== "")
                         }
                         defaultValue={field.value}
                         onChange={(e) => (field.value = e.target.value)}

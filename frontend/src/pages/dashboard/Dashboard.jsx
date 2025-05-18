@@ -108,7 +108,8 @@ const Dashboard = () => {
                 const room = roomData.find((r) => r.roomId === id);
                 return room ? room.roomTitle : null;
               })
-              .filter((title) => title !== null),
+              .filter((title) => title !== null)
+              .join(", "),
             userId: booking.userId,
             guest: booking.fullname,
             phone: booking.phone,

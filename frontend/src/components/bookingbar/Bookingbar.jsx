@@ -61,6 +61,10 @@ const Bookingbar = () => {
           checkOutDate: checkOut,
         }
       );
+      if (response.data.length === 0) {
+        alert("No available room");
+        return;
+      }
 
       setAdultsCount(adults);
       setChildrenCount(children);
@@ -72,7 +76,7 @@ const Bookingbar = () => {
       navigate("/check-availability");
     } catch (error) {
       console.error("Check failed:", error);
-      alert("Không tìm thấy phòng phù hợp.");
+      alert("No available room");
     }
   };
 
