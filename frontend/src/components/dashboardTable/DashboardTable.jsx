@@ -364,7 +364,9 @@ const DashboardTable = ({ dataObj, type, staticFields, refreshData }) => {
           <h2>{dataObj.title}</h2>
           {(data.length > 0 ||
             (data.length === 0 &&
-              (type === RSERVICES_TAB_KEY || type === PARKING_TAB_KEY))) &&
+              (type === RSERVICES_TAB_KEY ||
+                type === PARKING_TAB_KEY ||
+                type === BOOKINGS_TAB_KEY))) &&
             type !== REVIEWS_TAB_KEY && (
               <button
                 className="dashboard-add-items-btn add-rooms"

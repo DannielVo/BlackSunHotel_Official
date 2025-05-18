@@ -55,7 +55,7 @@ const CheckAvailabilityBar = ({ handleCheckAvailability }) => {
         : Math.max(1, adultsCount - 1);
       setAdultsCount((prev) => Math.max(1, prev + (isPlus ? 1 : -1)));
     } else if (type === "child") {
-      tmpAdultCounts = isPlus
+      tmpChildrenCounts = isPlus
         ? Math.max(0, childrenCount + 1)
         : Math.max(0, childrenCount - 1);
       setChildrenCount((prev) => Math.max(0, prev + (isPlus ? 1 : -1)));
