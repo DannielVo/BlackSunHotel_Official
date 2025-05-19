@@ -279,6 +279,9 @@ const DashboardTable = ({ dataObj, type, staticFields, refreshData }) => {
 
         dataBody.notes = "";
         dataBody.email = "";
+        if (dataBody.userId === "") {
+          dataBody.userId = null;
+        }
         break;
 
       case RSERVICES_TAB_KEY:
