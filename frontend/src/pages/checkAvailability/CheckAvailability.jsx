@@ -119,13 +119,20 @@ const CheckAvailability = () => {
       console.log(tmpResult);
       setResult(tmpResult);
 
+      // tmpResult.initResult.forEach((item) => {
+      //   const key = item.roomTypeName.toLowerCase();
+      //   setRoomCounts((prev) => ({
+      //     ...prev,
+      //     [key]: item.count,
+      //   }));
+      // });
+      const newCounts = {};
       tmpResult.initResult.forEach((item) => {
         const key = item.roomTypeName.toLowerCase();
-        setRoomCounts((prev) => ({
-          ...prev,
-          [key]: item.count,
-        }));
+        newCounts[key] = item.count;
       });
+
+      setRoomCounts(newCounts);
     }
   };
 

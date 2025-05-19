@@ -130,11 +130,21 @@ const Dashboard = () => {
 
         if (!tabData[key] || isForceRefresh) {
           const data = await fetchData(key);
+          const bookingData = await fetchData("bookings");
+          const roomData = await fetchData("rooms");
 
           const mappedData = data.map((review) => ({
             id: review.reviewId,
             bookingId: review.bookingId,
-            rooms: review.booking.bookingDetails.map((detail) => detail.roomId),
+            rooms: bookingData
+              .find((b) => b.bookingId === review.bookingId)
+              .bookingDetails.map((detail) => detail.roomId)
+              .map((id) => {
+                const room = roomData.find((r) => r.roomId === id);
+                return room ? room.roomTitle : null;
+              })
+              .filter((title) => title !== null)
+              .join(", "),
             content: review.reviewContent,
             rating: review.rating,
           }));
@@ -187,7 +197,7 @@ const Dashboard = () => {
   useEffect(() => {
     document.title = "Black Sun Hotel | Dashboard";
 
-    handleTabChange(USERS_TAB_KEY);
+    handleTabChange(USERS_TAB_KEY, true);
   }, []);
 
   return (
@@ -218,7 +228,7 @@ const Dashboard = () => {
                 className={`dashboard-menu-item ${
                   activeTab === item.key ? "active" : ""
                 }`}
-                onClick={() => handleTabChange(item.key)}
+                onClick={() => handleTabChange(item.key, true)}
               >
                 <a href="#">
                   <i className={`bx ${item.icon}`}></i> {item.label}

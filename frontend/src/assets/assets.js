@@ -558,7 +558,7 @@ export const DASHBOARD_BOOKING_FIELD_MODAL = {
       label: "User ID",
       type: "text",
       required: true,
-      readOnly: true,
+      readOnly: false,
       value: "",
     },
     {
@@ -719,30 +719,30 @@ export const DASHBOARD_PARKING_SERVICE_FIELD_MODAL = {
 export let MOCK_USERS = {
   title: "Users",
   mockData: [
-    {
-      id: 1,
-      name: "Jone Pit",
-      email: "jone123@gmail.com",
-      phone: "+84 123 456 789",
-      password: "",
-      role: "Customer",
-    },
-    {
-      id: 2,
-      name: "Jenny Dillow",
-      email: "jennydillow@gmail.com",
-      phone: "+84 987 654 321",
-      password: "",
-      role: "Staff",
-    },
-    {
-      id: 3,
-      name: "Alice Brown",
-      email: "aliceB@gmail.com",
-      phone: "+84 123 456 788",
-      password: "",
-      role: "Admin",
-    },
+    // {
+    //   id: 1,
+    //   name: "Jone Pit",
+    //   email: "jone123@gmail.com",
+    //   phone: "+84 123 456 789",
+    //   password: "",
+    //   role: "Customer",
+    // },
+    // {
+    //   id: 2,
+    //   name: "Jenny Dillow",
+    //   email: "jennydillow@gmail.com",
+    //   phone: "+84 987 654 321",
+    //   password: "",
+    //   role: "Staff",
+    // },
+    // {
+    //   id: 3,
+    //   name: "Alice Brown",
+    //   email: "aliceB@gmail.com",
+    //   phone: "+84 123 456 788",
+    //   password: "",
+    //   role: "Admin",
+    // },
   ],
 };
 
@@ -750,27 +750,27 @@ export let MOCK_ROOMS = {
   title: "Rooms",
   type: [],
   mockData: [
-    {
-      name: "Room 101",
-      type: "Economy",
-      features: "King bed, Sea view, Balcony",
-      price: "150",
-      status: "Available",
-    },
-    {
-      name: "Room 102",
-      type: "Deluxe",
-      features: "Queen bed, City view",
-      price: "100",
-      status: "Booked",
-    },
-    {
-      name: "Room 103",
-      type: "Premium",
-      features: "King bed, Living room, Jacuzzi",
-      price: "250",
-      status: "Pending",
-    },
+    // {
+    //   name: "Room 101",
+    //   type: "Economy",
+    //   features: "King bed, Sea view, Balcony",
+    //   price: "150",
+    //   status: "Available",
+    // },
+    // {
+    //   name: "Room 102",
+    //   type: "Deluxe",
+    //   features: "Queen bed, City view",
+    //   price: "100",
+    //   status: "Booked",
+    // },
+    // {
+    //   name: "Room 103",
+    //   type: "Premium",
+    //   features: "King bed, Living room, Jacuzzi",
+    //   price: "250",
+    //   status: "Pending",
+    // },
   ],
 };
 
@@ -778,111 +778,111 @@ export let MOCK_BOOKINGS = {
   title: "Bookings",
   roomData: [],
   mockData: [
-    {
-      id: 1,
-      room: "101",
-      userId: "",
-      guest: "Alice",
-      phone: "+84 123 456 789",
-      checkIn: "2023-01-01",
-      checkOut: "2023-01-02",
-      totalPrice: "100",
-      status: "Cancelled",
-    },
-    {
-      id: 2,
-      room: "102, 103",
-      userId: "",
-      guest: "Sarah Johnson",
-      phone: "+84 987 654 321",
-      checkIn: "2023-06-08",
-      checkOut: "2023-06-22",
-      totalPrice: "500",
-      status: "Pending",
-    },
-    {
-      id: 3,
-      room: "204",
-      userId: "",
-      guest: "Michael Brown",
-      phone: "+84 555 123 456",
-      checkIn: "2023-06-20",
-      checkOut: "2023-06-25",
-      totalPrice: "1100",
-      status: "Paid",
-    },
+    // {
+    //   id: 1,
+    //   room: "101",
+    //   userId: "",
+    //   guest: "Alice",
+    //   phone: "+84 123 456 789",
+    //   checkIn: "2023-01-01",
+    //   checkOut: "2023-01-02",
+    //   totalPrice: "100",
+    //   status: "Cancelled",
+    // },
+    // {
+    //   id: 2,
+    //   room: "102, 103",
+    //   userId: "",
+    //   guest: "Sarah Johnson",
+    //   phone: "+84 987 654 321",
+    //   checkIn: "2023-06-08",
+    //   checkOut: "2023-06-22",
+    //   totalPrice: "500",
+    //   status: "Pending",
+    // },
+    // {
+    //   id: 3,
+    //   room: "204",
+    //   userId: "",
+    //   guest: "Michael Brown",
+    //   phone: "+84 555 123 456",
+    //   checkIn: "2023-06-20",
+    //   checkOut: "2023-06-25",
+    //   totalPrice: "1100",
+    //   status: "Paid",
+    // },
   ],
 };
 
 export let MOCK_REVIEWS = {
   title: "Reviews",
   mockData: [
-    {
-      id: 1,
-      bookingId: 1,
-      rooms: "101",
-      content: "Great experience, would stay again!",
-      rating: 4,
-    },
-    {
-      id: 2,
-      bookingId: 2,
-      rooms: "102, 103",
-      content: "Clean room but noisy at night",
-      rating: 3,
-    },
-    {
-      id: 3,
-      bookingId: 3,
-      rooms: "204",
-      content: "Perfect for our family vacation, excellent service!",
-      rating: 5,
-    },
+    // {
+    //   id: 1,
+    //   bookingId: 1,
+    //   rooms: "101",
+    //   content: "Great experience, would stay again!",
+    //   rating: 4,
+    // },
+    // {
+    //   id: 2,
+    //   bookingId: 2,
+    //   rooms: "102, 103",
+    //   content: "Clean room but noisy at night",
+    //   rating: 3,
+    // },
+    // {
+    //   id: 3,
+    //   bookingId: 3,
+    //   rooms: "204",
+    //   content: "Perfect for our family vacation, excellent service!",
+    //   rating: 5,
+    // },
   ],
 };
 
 export let MOCK_ROOM_SERVICES = {
   title: "Room Service",
   mockData: [
-    {
-      id: 1,
-      roomNumber: "101",
-      date: "2023-01-02",
-      status: "Completed",
-    },
-    {
-      id: 2,
-      roomNumber: "102",
-      date: "2023-05-15",
-      status: "Pending",
-    },
-    {
-      id: 3,
-      roomNumber: "103",
-      date: "2023-05-15",
-      status: "Progress",
-    },
+    // {
+    //   id: 1,
+    //   roomNumber: "101",
+    //   date: "2023-01-02",
+    //   status: "Completed",
+    // },
+    // {
+    //   id: 2,
+    //   roomNumber: "102",
+    //   date: "2023-05-15",
+    //   status: "Pending",
+    // },
+    // {
+    //   id: 3,
+    //   roomNumber: "103",
+    //   date: "2023-05-15",
+    //   status: "Progress",
+    // },
   ],
 };
 
 export let MOCK_PARKING_SERVICES = {
   title: "Parking Service",
   mockData: [
-    {
-      id: 1,
-      bookingId: 1,
-      parkingPlateNo: "51A-12345",
-    },
-    {
-      id: 2,
-      bookingId: 2,
-      parkingPlateNo: "30B-67890",
-    },
-    {
-      id: 1,
-      bookingId: 3,
-      parkingPlateNo: "29A-54321",
-    },
+    // {
+    //   id: 1,
+    //   bookingId: 1,
+    //   parkingPlateNo: "51A-12345",
+    // },
+    // {
+    //   id: 2,
+    //   bookingId: 2,
+    //   parkingPlateNo: "30B-67890",
+    // },
+    // {
+    //   id: 1,
+    //   bookingId: 3,
+    //   parkingPlateNo: "29A-54321",
+    // },
   ],
 };
 
